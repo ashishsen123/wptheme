@@ -575,7 +575,7 @@ function twentytwelve_body_class( $classes ) {
 
 	// Enable custom font class only if the font CSS is queued to load.
 	if ( wp_style_is( 'twentytwelve-fonts', 'queue' ) )
-		$classes[] = 'custom-font-enabled';
+		$classes[] = 'custom-fonts-enabled';
 
 	if ( ! is_multi_author() )
 		$classes[] = 'single-author';
@@ -601,7 +601,6 @@ function twentytwelve_content_width() {
 	}
 }
 add_action( 'template_redirect', 'twentytwelve_content_width' );
-
 
 
 	
