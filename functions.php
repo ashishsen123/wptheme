@@ -535,35 +535,6 @@ function twentytwelve_body_class( $classes ) {
 	$background_color = get_background_color();
 	$background_image = get_background_image();
 
-	if ( ! is_active_sidebar( 'sidebar-1' ) || is_page_template( 'page-templates/full-width.php' ) )
-		$classes[] = 'full-width';
-
-	if ( is_page_template( 'page-templates/front-page.php' ) ) {
-		$classes[] = 'template-front-page';
-		if ( has_post_thumbnail() )
-			$classes[] = 'has-post-thumbnail';
-		if ( is_active_sidebar( 'sidebar-2' ) && is_active_sidebar( 'sidebar-3' ) )
-			$classes[] = 'two-sidebars';
-	}
-
-	if ( is_page_template( 'page-templates/content-sidebar-sidebar.php' ) ) {
-		$classes[] = 'content-sidebar-sidebar';
-	}
-	
-
-	if ( is_page_template( 'page-templates/sidebar-content.php' ) ) {
-		$classes[] = 'sidebar-content';
-	}
-	
-
-	if ( is_page_template( 'page-templates/sidebar-content-sidebar.php' ) ) {
-		$classes[] = 'sidebar-content-sidebar';
-	}
-	
-
-	if ( is_page_template( 'page-templates/sidebar-sidebar-content.php' ) ) {
-		$classes[] = 'sidebar-sidebar-content';
-	}
 	
 		
 	if ( empty( $background_image ) ) {
